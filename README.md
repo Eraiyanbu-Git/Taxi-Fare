@@ -51,3 +51,91 @@ TripFare_Project/
 ├── Trip Fare Eda Modeling.ipynb # Full ML workflow notebook
 ├── README.md
 └── requirements.txt # Project dependencies
+
+# 🛒 Shopper Spectrum  
+**Customer Segmentation and Product Recommendations in E-Commerce**
+
+---
+
+## 🔎 Key Components
+
+### 1️⃣ RFM Customer Segmentation (Unsupervised Learning)
+
+- **Recency**: Days since last purchase  
+- **Frequency**: Number of purchases  
+- **Monetary**: Total amount spent  
+
+**Algorithm Used**: KMeans clustering  
+**Optimal K Selection**: Elbow Method & Silhouette Score  
+
+**Segment Labels:**
+
+| Segment     | Description                                |
+|-------------|--------------------------------------------|
+| High-Value  | Frequent, recent, and high-spending        |
+| Regular     | Moderate in all RFM dimensions             |
+| Occasional  | Low frequency and spend                    |
+| At-Risk     | Long inactive, low spend and frequency     |
+
+---
+
+### 2️⃣ Product Recommendation System (Collaborative Filtering)
+
+- Customer × Product pivot table
+- Cosine Similarity between products
+- Recommends **Top 5** similar items based on input product
+
+---
+
+## 🎯 Streamlit Web App Features
+
+### 🔍 1. Customer Segmentation  
+**Input:**
+- Recency  
+- Frequency  
+- Monetary  
+
+**Output:**  
+- Predicted customer segment (e.g. High-Value)
+
+---
+
+### 🛍️ 2. Product Recommendation  
+**Input:**  
+- Product name  
+
+**Output:**  
+- Top 5 similar product recommendations
+
+---
+
+## 🚀 How to Run Locally
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/your-username/shopper-spectrum.git
+   cd shopper-spectrum
+
+2. **Install dependencies**
+    ```bash
+    pip install -r requirements.txt
+3. Launch Streamlit app
+    ```bash
+    cd app
+    streamlit run app.py
+
+🧩 Real-World Applications
+🎯 Targeted Marketing Campaigns
+
+🛍 Personalized Product Recommendations
+
+💡 Customer Retention Strategy
+
+📦 Smart Inventory Planning
+
+**✨ Author** :
+Eraiyanbu Arulmurugan
+
+
+
+
